@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="An IP Tracker App with live location of user">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Address Tracker</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+   <link rel="stylesheet" href="styles.css">
+   <script type="module" src="index.js"></script>
+</head>
+<body>
+    
+    <div class="head-section">
+        <h1 class="title">IP Address Tracker</h1>
+        <div class="search-bar">
+            <input data-input class="input" type="text" autofocus placeholder="Search for any IP address or domain">
+            <div data-submit class="arrow-icon">
+                <img src="images/icon-arrow.svg" alt="search-icon">
+            </div>
+        </div>
+    </div>
+    <div class="results">
+        <div class="info">
+            <span>IP ADDRESS</span>
+            <div data-ipAddress>192.91.4.147</div>
+        </div>
+        <div class="info">
+            <span>LOCATION</span>
+            <div data-location>NG Lagos State</div>
+        </div>
+        <div class="info">
+            <span>TIMEZONE</span>
+            <div data-timezone>UTC+1.00</div>
+        </div>
+        <div class="info">
+            <span>ISP</span>
+            <div data-isp>MTNN-ABUJA-REGION</div>
+        </div>
+    </div>
+    <div id="weathermap"></div>
+
+</body>
+</html>
